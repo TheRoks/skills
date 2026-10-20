@@ -12,22 +12,22 @@ The [Agent Skills CLI](https://github.com/vercel-labs/skills) can install a skil
 
 ### Install from this GitHub repository
 
-After this repository is published, replace `OWNER/REPO` with its GitHub owner and repository name:
+Install the published repository with:
 
 ```sh
-npx skills add OWNER/REPO --skill clean-code -a codex -a claude-code -a github-copilot
+npx skills add TheRoks/skills --skill clean-code -a codex -a claude-code -a github-copilot
 ```
 
 The CLI will ask where to install and whether to symlink or copy. Project installation is the default and can be committed for the team. Choose `--copy` instead of symlinks if your environment does not support them:
 
 ```sh
-npx skills add OWNER/REPO --skill clean-code -a codex -a claude-code -a github-copilot --copy
+npx skills add TheRoks/skills --skill clean-code -a codex -a claude-code -a github-copilot --copy
 ```
 
 For a personal installation shared across projects, add `--global`:
 
 ```sh
-npx skills add OWNER/REPO --skill clean-code --global -a codex -a claude-code -a github-copilot
+npx skills add TheRoks/skills --skill clean-code --global -a codex -a claude-code -a github-copilot
 ```
 
 ### Install from a local checkout
@@ -45,12 +45,12 @@ Use the `--global` flag for a personal install. The source repository itself doe
 List skills available from the source without installing them, list installed skills, or update this skill later:
 
 ```sh
-npx skills add OWNER/REPO --list
+npx skills add TheRoks/skills --list
 npx skills list
 npx skills update clean-code
 ```
 
-Replace `OWNER/REPO` in each GitHub command with the published repository coordinate. See the CLI's [command reference](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) for supported agents, flags, and current behavior.
+See the CLI's [command reference](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) for supported agents, flags, and current behavior.
 
 ## Skill layout and discovery
 
